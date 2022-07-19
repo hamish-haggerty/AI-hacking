@@ -58,8 +58,8 @@ class base_SVGD:
 
 class trainable_SVGD(base_SVGD):
 
-    def __init__(self,N=100,zdim=1,eta=0.001,beta1=0.9,beta2=0.999,eps=1e-8):
-        super().__init__(N,zdim,device='cpu')
+    def __init__(self,N=100,zdim=1,device='cpu',eta=0.001,beta1=0.9,beta2=0.999,eps=1e-8):
+        super().__init__(N,zdim,device)
 
         self.eta=eta #initial learning rate
 
